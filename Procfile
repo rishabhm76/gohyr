@@ -1,1 +1,2 @@
-web: python helloworld.py 
+web: python helloworld.py
+worker: python helloworld.py
