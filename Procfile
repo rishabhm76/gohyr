@@ -1,2 +1,1 @@
-web: python helloworld.py
-worker: python helloworld.py
+web: gunicorn main_app:app --log-file -
