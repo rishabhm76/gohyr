@@ -1,2 +1,1 @@
-web: gunicorn jdserver.wsgi
-web: python manage.py
+web: python manage.py runserver
