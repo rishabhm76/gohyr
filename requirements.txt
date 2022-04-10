@@ -3,3 +3,6 @@ Jinja2==3.1.1
 MarkupSafe==2.1.1
 Werkzeug==2.0.3
 itsdangerous==2.1.2
+django
+gunicorn
+django-cors-headers
