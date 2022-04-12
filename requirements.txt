@@ -6,3 +6,5 @@ itsdangerous==2.1.2
 django
 gunicorn
 django-cors-headers
+docx
+pdfplumber
