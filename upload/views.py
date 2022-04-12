@@ -23,8 +23,8 @@ def my_program(files):
         newFile = {}
         
         if files[f].name.endswith('.docx'):
-            #doc = docx.Document(files[f])
-            doc = docx2txt.process(files[f])
+            doc = docx.Document(files[f])
+            #doc = docx2txt.process(files[f])
             text = ""
             fullText = []
             for para in doc.paragraphs:
