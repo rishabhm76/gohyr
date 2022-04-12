@@ -20,6 +20,8 @@ def my_program(files):
     fileList = []
     for f in files.keys():
         newFile = {}
+        print(files[f])
+        print(files[f].name)
         
         if files[f].name.endswith('.docx'):
             doc = docx.Document(files[f])
