@@ -20,8 +20,6 @@ def my_program(files):
     fileList = []
     for f in files.keys():
         newFile = {}
-        print(files[f])
-        print(files[f].name)
         
         if files[f].name.endswith('.docx'):
             doc = docx.Document(files[f])
@@ -34,6 +32,7 @@ def my_program(files):
         
             newFile['fileName'] = files[f].name
             newFile['content'] = text
+            fileList.append(newFile)
                 
         elif files[f].name.endswith('.pdf'):
             text = ""
@@ -45,6 +44,7 @@ def my_program(files):
                 
             newFile['fileName'] = files[f].name
             newFile['content'] = text
+            fileList.append(newFile)
             
         else:
             
