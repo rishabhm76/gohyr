@@ -7,3 +7,4 @@ django
 gunicorn
 django-cors-headers
 pdfplumber
+python-docx
