@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-import docx2txt
-#import docx
+#import docx2txt
+import python-docx
 import pdfplumber
 
 # Create your views here.
