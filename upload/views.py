@@ -2,8 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-! pip install python-docx
-import docx
+# ! pip install python-docx
+import docx2txt
+#import docx
 import pdfplumber
 
 # Create your views here.
@@ -23,7 +24,8 @@ def my_program(files):
         newFile = {}
         
         if files[f].name.endswith('.docx'):
-            doc = docx.Document(files[f])
+            #doc = docx.Document(files[f])
+            doc = docx2txt.process(files[f])
             text = ""
             fullText = []
             for para in doc.paragraphs:
