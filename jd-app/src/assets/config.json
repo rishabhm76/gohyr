@@ -1,0 +1,6 @@
+{
+    "api": {
+        "url": "http://localhost:5000/",
+        "upload": "https://gohyr.herokuapp.com/upload/"
+    }
+}
