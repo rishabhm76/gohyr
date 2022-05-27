@@ -9,3 +9,13 @@ django-cors-headers
 pdfplumber
 python-docx
 docx
+xlrd
+openpyxl
+pyspellchecker
+numpy
+pandas
+re
+string
+os
+nltk
+textblob
