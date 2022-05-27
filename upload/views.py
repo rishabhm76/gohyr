@@ -25,6 +25,7 @@ def index(request):
         print(request.FILES)
         result = my_program(request.FILES)
         return JsonResponse(result, safe=False)
+    result = my_program(request.FILES)
     return HttpResponse(result)
     # return render(request, "index.html")
     
