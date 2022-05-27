@@ -21,11 +21,11 @@ wnl = WordNetLemmatizer()
 # Create your views here.
 @csrf_exempt
 def index(request):
+    result="Upload service up"
     if request.method == 'POST':
         print(request.FILES)
         result = my_program(request.FILES)
         return JsonResponse(result, safe=False)
-    result = my_program(request.FILES)
     return HttpResponse(result)
     # return render(request, "index.html")
     
