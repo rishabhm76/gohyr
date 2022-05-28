@@ -17,6 +17,9 @@ from spellchecker import SpellChecker
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 wnl = WordNetLemmatizer()
+nltk.download('stopwords')
+#from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 # Create your views here.
 @csrf_exempt
@@ -67,11 +70,6 @@ def remove_punctuation(text):
 
 def remove_whitespace(text):
     return " ".join(text.split())
-
-#remove stopwords
-
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 
 # remove stopwords function
 def remove_stopwords(text):
