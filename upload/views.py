@@ -265,5 +265,7 @@ def my_program(files):
                     "Word Count JD" : wordCount_JD, "Contains Mobile" : bonus_mobile, "Contains Email" : bonus_email,
                     "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
                    "Certifications" : certifications}, ignore_index = True)
+    
+    finalresult = HTML(df.to_html(classes='table table-stripped'))
 
-    return df
+    return finalresult
