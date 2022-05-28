@@ -267,6 +267,11 @@ def my_program(files):
                     "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
                    "Certifications" : certifications}, ignore_index = True)
     
-    finalresult = df.to_json(orient='split')
+    #finalresult = df.to_json(orient='columns')
+    
+    finalresult = {"JD Filename" : fileList[0]['fileName'], "Resume Filename" : fileList[1]['fileName'], 'Score' : score, "Word Count Resume" : wordCount_Resume,
+                    "Word Count JD" : wordCount_JD, "Contains Mobile" : bonus_mobile, "Contains Email" : bonus_email,
+                    "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
+                   "Certifications" : certifications}
 
     return finalresult
