@@ -106,7 +106,7 @@ def lemmatizer(keyword):
         
     return finallist
 
-df = pd.DataFrame()
+
 
 excel_path = "RPA Data.xlsx"
 data = pd.read_excel(excel_path, sheet_name = None)
@@ -118,6 +118,7 @@ developer_data = developer_data.fillna("")
 
 
 def my_program(files):
+    df = pd.DataFrame()
     fileList = []
     for f in files.keys():
         newFile = {}
@@ -262,10 +263,10 @@ def my_program(files):
     #calculating score acquired by resume for this JD
 
     score = (len(final_list)/len(req_list))*100
-'''
+    
     df = df.append({"JD Filepath" : path, "Resume Filepath" : var, 'Score' : score, "Word Count Resume" : wordCount_Resume,
                     "Word Count JD" : wordCount_JD, "Contains Mobile" : bonus_mobile, "Contains Email" : bonus_email,
                     "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
                    "Certifications" : certifications}, ignore_index = True)
-'''
+
     return score
