@@ -269,9 +269,9 @@ def my_program(files):
     
     #finalresult = df.to_json(orient='columns')
     
-    finalresult = {"JD Filename" : fileList[0]['fileName'], "Resume Filename" : fileList[1]['fileName'], 'Score' : score, "Word Count Resume" : wordCount_Resume,
-                    "Word Count JD" : wordCount_JD, "Contains Mobile" : bonus_mobile, "Contains Email" : bonus_email,
-                    "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
-                   "Certifications" : certifications}
+    finalresult = {"JD Filename" : fileList[0]['fileName'] + "\n", "Resume Filename" : fileList[1]['fileName'] + "\n", 'Score' : score + "\n", "Word Count Resume" : wordCount_Resume + "\n",
+                    "Word Count JD" : wordCount_JD + "\n", "Contains Mobile" : bonus_mobile + "\n", "Contains Email" : bonus_email + "\n",
+                    "Contains LinkedIn" : bonus_linkedIn + "\n", "Soft Skills" : soft_skills + "\n", "Hard Skills" : hard_skills + "\n",
+                   "Certifications" : certifications + "\n"}
 
     return finalresult
