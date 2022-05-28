@@ -20,6 +20,7 @@ wnl = WordNetLemmatizer()
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('omw-1.4')
 from nltk.tokenize import word_tokenize
 
 # Create your views here.
