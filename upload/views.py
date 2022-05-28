@@ -267,6 +267,6 @@ def my_program(files):
                     "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
                    "Certifications" : certifications}, ignore_index = True)
     
-    finalresult = HTML(df.to_html(classes='table table-stripped'))
+    finalresult = df.to_json(orient='columns')
 
     return finalresult
