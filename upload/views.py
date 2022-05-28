@@ -106,8 +106,6 @@ def lemmatizer(keyword):
         
     return finallist
 
-
-
 excel_path = "RPA Data.xlsx"
 data = pd.read_excel(excel_path, sheet_name = None)
 keyword_data = data['Keyword']
@@ -115,7 +113,6 @@ master_keyword_list = keyword_data['Keyword'].tolist()
 designation_data = data['Designation']
 developer_data = data['Developer']
 developer_data = developer_data.fillna("")
-
 
 def my_program(files):
     df = pd.DataFrame()
@@ -264,7 +261,7 @@ def my_program(files):
 
     score = (len(final_list)/len(req_list))*100
     
-    df = df.append({"JD Filepath" : path, "Resume Filepath" : var, 'Score' : score, "Word Count Resume" : wordCount_Resume,
+    df = df.append({"JD Filename" : fileList[0]['fileName'], "Resume Filename" : fileList[1]['fileName'], 'Score' : score, "Word Count Resume" : wordCount_Resume,
                     "Word Count JD" : wordCount_JD, "Contains Mobile" : bonus_mobile, "Contains Email" : bonus_email,
                     "Contains LinkedIn" : bonus_linkedIn, "Soft Skills" : soft_skills, "Hard Skills" : hard_skills,
                    "Certifications" : certifications}, ignore_index = True)
