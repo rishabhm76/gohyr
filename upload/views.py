@@ -17,8 +17,8 @@ from spellchecker import SpellChecker
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 wnl = WordNetLemmatizer()
+from nltk.corpus import stopwords
 nltk.download('stopwords')
-#from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 # Create your views here.
