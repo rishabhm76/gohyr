@@ -1,0 +1,36 @@
+<div class="container primary-bg">
+    <div class="row">
+        <div class="col m-3">
+            <h5>Uplaod JD</h5>
+            <input class="form-control" type="file" (change)="onChangeJd($event)" />
+        </div>
+        <div class="col m-3">
+            <h5>Uplaod Resume</h5>
+            <input class="form-control" type="file" (change)="onChangeResume($event)">
+        </div>
+    </div>
+    <br>
+    <div class="row dark-bg">
+        <div class="col-8">
+            <div class="form-inline">
+                <h4 class="primary">Get matching score for my profile against job description. </h4>
+               
+            </div>
+        </div>
+        <div class="col-4 text-end">
+            <button (click)="onUpload()" class="btn btn-success m-2">
+                Check Now
+            </button>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="col text-center">
+            <p>
+                {{response}}
+            </p>
+        </div>
+    </div>
+</div>

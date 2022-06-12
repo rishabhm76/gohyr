@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+/********** Template CSS **********/
+:root {
+    --primary: #F3BD00;
+    --secondary: #757575;
+    --light: #F3F6F8;
+    --dark: #0C2B4B;
+}
+.primary , .mdi {
+    color: var(--primary);
+}
+.primary-bg {
+    background-color: var(--primary);
+}
+.dark {
+    color: var(--dark);
+}
+.dark-bg {
+    background-color: var(--dark);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border: 10px solid var(--primary);
+}
+.team-item:hover::after {
+    height: 100%;
+    background: var(--primary);
+}
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+}

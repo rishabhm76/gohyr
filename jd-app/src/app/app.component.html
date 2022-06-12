@@ -1,31 +1,4 @@
-<div class="container">
-  <h1>JD App</h1>
-  <div class="row">
-    <div class="col">
-      <h3>Uplaod JD</h3>
-      <input class="form-control" type="file" (change)="onChangeJd($event)" />
-    </div>
-    <div class=" col">
-      <h3>Uplaod Resume</h3>
-      <input class="form-control" type="file" (change)="onChangeResume($event)">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col text-center">
-      <button (click)="onUpload()" class="btn btn-success">
-        Upload
-      </button>
-    </div>
-  </div>
-  <br>
-  <hr>
-
-  <div class="row">
-    <div class="col text-center">
-      <p>
-        {{response}}
-      </p>
-    </div>
-  </div>
-</div>
+<app-header></app-header>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
